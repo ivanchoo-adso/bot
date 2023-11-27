@@ -86,11 +86,9 @@
                 <p class="text-right text-subtitle-2 font-italic">
                   {{ message.created_at }}
                   <v-icon
-                    v-bind="attrs"
-                    :color="formatReadStatus(message.status).color"
-                    small
-                    v-on="on"
-                    >{{ formatReadStatus(message.status).icon }}</v-icon
+                  :color="formatReadStatus(message.status).color"
+                   small
+                  >{{ formatReadStatus(message.status).icon }}</v-icon
                   >
 
                 </p>
